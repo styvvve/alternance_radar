@@ -1,0 +1,124 @@
+# ============================================================
+# Java / Maven
+# ============================================================
+
+# Maven build output
+target/
+
+# Maven wrapper generated files
+*.log
+
+
+# ============================================================
+# IntelliJ IDEA
+# ============================================================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IntelliJ module files
+out/
+
+# IntelliJ local history
+.localhistory/
+
+# ============================================================
+# Eclipse
+# ============================================================
+
+.classpath
+.project
+.settings/
+
+
+# ============================================================
+# VS Code
+# ============================================================
+
+.vscode/
+
+
+# ============================================================
+# Spring Boot / Application
+# ============================================================
+
+# Local configuration files
+application-local.properties
+application-local.yml
+application-local.yaml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+
+# ============================================================
+# Secrets / credentials
+# ============================================================
+
+# Private keys / certificates
+*.pem
+*.key
+*.p12
+*.jks
+
+# Credentials files
+credentials.json
+secrets.json
+
+
+# ============================================================
+# Database / local data
+# ============================================================
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL dumps
+*.dump
+*.sql.gz
+
+
+# ============================================================
+# Logs
+# ============================================================
+
+*.log
+logs/
+
+
+# ============================================================
+# Operating System
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+
+# Linux
+*~
+
+
+# ============================================================
+# Temporary files
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Crash logs
+hs_err_pid*
+replay_pid*
