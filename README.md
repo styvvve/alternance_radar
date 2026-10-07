@@ -177,19 +177,6 @@ spring.jpa.hibernate.ddl-auto=validate
 
 This prevents Hibernate from modifying the database structure automatically.
 
-## Technologies
-
-| Category | Technology |
-|---|---|
-| Language | Java 21 |
-| Framework | Spring Boot 4 |
-| Persistence | Spring Data JPA / Hibernate |
-| Database | PostgreSQL 16 |
-| Database migrations | Flyway |
-| Build tool | Maven |
-| Security | Spring Security |
-| Infrastructure | Docker |
-| Version control | Git / GitHub |
 
 ## Development
 
@@ -223,16 +210,18 @@ The following parts have currently been implemented:
 - Database constraints
 - Hibernate schema validation
 - Externalized database credentials
+- User repository (`UserRepository`), with email lookup
+- User service (`UserService`) with full CRUD and duplicate email handling
+- Custom exceptions (`ResourceNotFoundException`, `EmailAlreadyExistsException`)
 
 Current development:
 
-- Repository layer
-- Service layer
-- REST API
+- REST API (`UserController` and others)
 - DTOs
 - Validation
-- Exception handling
+- Global exception handling
 - Authentication and authorization
+- Repository and service layers for the remaining entities (`Company`, `Offer`, `Skill`, `Language`, etc.)
 
 Planned development:
 
@@ -268,7 +257,8 @@ com.alternanceradar
 │
 ├── repository
 ├── service
-└── controller
+├── controller
+└── exception
 ```
 
 ## Author
